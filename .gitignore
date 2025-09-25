@@ -5,3 +5,4 @@ browser/__pycache__/*
 MailService/tempmail_config.json
 MailService/tempmail_messages.json
 proxy/__pycache__/*
+/mails/*
