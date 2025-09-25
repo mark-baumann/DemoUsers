@@ -1,2 +1,7 @@
 .env
 .DS_Store
+.*
+browser/__pycache__/*
+MailService/tempmail_config.json
+MailService/tempmail_messages.json
+proxy/__pycache__/*
