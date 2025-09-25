@@ -114,11 +114,30 @@ class GuerrillaMailAPI:
                         mail_body = mail_body_html
                     
                     # Create normalized response with correct subject field
+                    # Format mail_date as human-readable string if timestamp provided
+                    mail_ts = data.get('mail_timestamp')
+                    try:
+                        if isinstance(mail_ts, (int, float)):
+                            formatted_date = datetime.fromtimestamp(mail_ts).strftime('%Y-%m-%d %H:%M:%S')
+                        elif isinstance(mail_ts, str) and mail_ts.isdigit():
+                            formatted_date = datetime.fromtimestamp(int(mail_ts)).strftime('%Y-%m-%d %H:%M:%S')
+                        else:
+                            formatted_date = data.get('mail_date', '') or ''
+                    except Exception:
+                        formatted_date = data.get('mail_date', '') or ''
+                    # Ensure formatted_date is a string (avoid numeric 0 leaking)
+                    if formatted_date is None or formatted_date == 0:
+                        formatted_date = ''
+                    elif not isinstance(formatted_date, str):
+                        try:
+                            formatted_date = str(formatted_date)
+                        except Exception:
+                            formatted_date = ''
                     return {
                         'mail_body': mail_body,
                         'mail_from': data.get('mail_from', 'Unknown'),
                         'subject': data.get('mail_subject', 'No Subject'),  # Use correct field
-                        'mail_date': data.get('mail_timestamp', ''),
+                        'mail_date': formatted_date,
                         'mail_size': data.get('mail_size', 0),
                         'receive_time': datetime.now().timestamp()  # Add timestamp for sorting
                     }
@@ -182,12 +201,21 @@ class MailGwAPI:
             # Create account
             async with session.post(f"{self.BASE_URL}/accounts", 
                                      json={"address": email, "password": password}) as resp:
-                await resp.json()  # Just check for errors
+                # Mail.gw sometimes returns text/html on errors; guard json decoding
+                try:
+                    await resp.json()
+                except Exception:
+                    _ = await resp.text()
             
             # Get token
             async with session.post(f"{self.BASE_URL}/token",
                                      json={"address": email, "password": password}) as resp:
-                data = await resp.json()
+                try:
+                    data = await resp.json()
+                except Exception:
+                    # If unexpected mimetype, parse text and try to extract token
+                    text = await resp.text()
+                    raise Exception(f"Mail.gw token response not JSON: {text[:200]}")
                 token = data["token"]
         
         return {'email': email, 'token': token}
@@ -196,7 +224,11 @@ class MailGwAPI:
         headers = {"Authorization": f"Bearer {token}"}
         async with aiohttp.ClientSession() as session:
             async with session.get(f"{self.BASE_URL}/messages", headers=headers) as resp:
-                data = await resp.json()
+                try:
+                    data = await resp.json()
+                except Exception:
+                    _ = await resp.text()
+                    raise
                 messages = data.get("hydra:member", [])
                 
                 # Normalize message format
@@ -217,7 +249,11 @@ class MailGwAPI:
             headers = {"Authorization": f"Bearer {token}"}
             async with aiohttp.ClientSession() as session:
                 async with session.get(f"{self.BASE_URL}/messages/{message_id}", headers=headers) as resp:
-                    msg = await resp.json()
+                    try:
+                        msg = await resp.json()
+                    except Exception:
+                        text = await resp.text()
+                        raise Exception(f"Mail.gw message response not JSON: {text[:200]}")
                     
                     # Prioritize HTML content if available
                     html_content = msg.get('html', '')

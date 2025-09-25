@@ -1,25 +1,126 @@
 {
   "addresses": {
-    "pierrette861b35@sf.vertexium.net": {
-      "token": "11sa76cih4b3aizg3vzjm7qaj7p9w2ptt34y45",
+    "ajxuiajbx@yomail.info": {
+      "token": "00wmlljreqcu|U2Vzc2lvbjpO3dJXVxRD2b3wPGazosnu",
+      "messages": [],
+      "service": "dropmail",
+      "created_at": 1758816963.1816416,
+      "last_updated": 1758816963.1816418
+    },
+    "oepeu0fy4p@tiffincrane.com": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NTg4MTY5NzAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoib2VwZXUwZnk0cEB0aWZmaW5jcmFuZS5jb20iLCJpZCI6IjY4ZDU2YWNhNDI5NzkzMGIxMjA4NDY2ZSIsIm1lcmN1cmUiOnsic3Vic2NyaWJlIjpbIi9hY2NvdW50cy82OGQ1NmFjYTQyOTc5MzBiMTIwODQ2NmUiXX19.7tBDR2cICSoprZp82rKkxz5c_fgsxc2q6AXZPi5-fTw6PU_0AZdLiV1AQswpMSHo_x8amUwe49h5lQ6yT4P6rQ",
+      "messages": [],
+      "service": "mailtm",
+      "created_at": 1758816969.5353844,
+      "last_updated": 1758816969.5353847
+    },
+    "catherine86894e@sp.vertexium.net": {
+      "token": "1m9656zgxrb8y2x95uazocattm7cgo40t35jv2",
+      "messages": [],
+      "service": "tempmaillol",
+      "created_at": 1758816973.7304356,
+      "last_updated": 1758816973.7304356
+    },
+    "sodrtfcr@guerrillamailblock.com": {
+      "token": "32s93mapi33drpv8na6n6prd1n",
       "messages": [
         {
-          "mail_id": "0",
-          "subject": "test",
-          "mail_from": "\"Mark Baumann\" <kontakt@markb.de>",
-          "mail_date": "2025-09-25 10:30:39",
-          "mail_body": "\r\n\r\n\r\n",
-          "mail_size": 6,
-          "cached": false,
-          "receive_time": 1758789039.951173
+          "mail_id": 1,
+          "subject": "Welcome to Guerrilla Mail",
+          "mail_from": "no-reply@guerrillamail.com",
+          "mail_date": "16:16:20",
+          "receive_time": 1758816982.470787
         }
       ],
-      "service": "tempmaillol",
-      "created_at": 1758788789.083936,
-      "last_updated": 1758789039.95882
+      "service": "guerrillamail",
+      "created_at": 1758816979.8327396,
+      "last_updated": 1758816982.47226
+    },
+    "bkpfrqgl@guerrillamailblock.com": {
+      "token": "b967g2o27sgs6vdu4o395hrjfe",
+      "messages": [
+        {
+          "mail_id": 1,
+          "subject": "Welcome to Guerrilla Mail",
+          "mail_from": "no-reply@guerrillamail.com",
+          "mail_date": "16:16:28",
+          "receive_time": 1758816991.70176
+        }
+      ],
+      "service": "guerrillamail",
+      "created_at": 1758816988.3461835,
+      "last_updated": 1758816991.702608
+    },
+    "ogxmqhbc@guerrillamailblock.com": {
+      "token": "phnqpifekn1ju4gctdm76t0ig2",
+      "messages": [
+        {
+          "mail_id": 1,
+          "subject": "Welcome to Guerrilla Mail",
+          "mail_from": "no-reply@guerrillamail.com",
+          "mail_date": "16:16:33",
+          "receive_time": 1758816998.650731
+        }
+      ],
+      "service": "guerrillamail",
+      "created_at": 1758816993.4058583,
+      "last_updated": 1758816998.651615
+    },
+    "qmerq8a9xr@pastryofistanbul.com": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NTg4MTcwMDAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InFtZXJxOGE5eHJAcGFzdHJ5b2Zpc3RhbmJ1bC5jb20iLCJpZCI6IjY4ZDU2YWFjYzY5ZmVjMGJiYjdjODlhNyIsIm1lcmN1cmUiOnsic3Vic2NyaWJlIjpbIi9hY2NvdW50cy82OGQ1NmFhY2M2OWZlYzBiYmI3Yzg5YTciXX19.FeKgo9mUxxnok88IjvtVgHm8GhmIcaPmebyJtKg2n9yFfpnFbLgN7cOxRIsgTDtJsr29l9WZ9tQSpHfY4F1oJQ",
+      "messages": [],
+      "service": "mailgw",
+      "created_at": 1758817000.1976066,
+      "last_updated": 1758817000.1976068
+    },
+    "8ro5l29xb9@raleigh-construction.com": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NTg4MTcwNzAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6IjhybzVsMjl4YjlAcmFsZWlnaC1jb25zdHJ1Y3Rpb24uY29tIiwiaWQiOiI2OGQ1NmFjMGIzYzBmMDJmY2UyZTk5NTYiLCJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIvYWNjb3VudHMvNjhkNTZhYzBiM2MwZjAyZmNlMmU5OTU2Il19fQ.RIDzkcaJZLv8nHWM1GaBQK2_QaxZZLgbggODrTxVQS6VPZobTWKM2V8EIlw832tnbLYd_hHchvsP05-XVHBcmA",
+      "messages": [],
+      "service": "mailgw",
+      "created_at": 1758817069.6547399,
+      "last_updated": 1758817069.6547406
+    },
+    "t4qrq1r4o3@pastryofistanbul.com": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NTg4MTcwNzAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InQ0cXJxMXI0bzNAcGFzdHJ5b2Zpc3RhbmJ1bC5jb20iLCJpZCI6IjY4ZDU2YWJlNmM4YzMxMzg4MjQ4ZjliOSIsIm1lcmN1cmUiOnsic3Vic2NyaWJlIjpbIi9hY2NvdW50cy82OGQ1NmFiZTZjOGMzMTM4ODI0OGY5YjkiXX19.tHObxlpB9uEeVFG1_FS6tCpkuDYpaON8v4lv66gLN_D1EtO2Bf6HUVyFJgjWWczX_6oSIDNhwE97p56zqcrHXA",
+      "messages": [],
+      "service": "mailgw",
+      "created_at": 1758817069.6984365,
+      "last_updated": 1758817069.6984372
+    },
+    "g3zeag8dlm@teihu.com": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NTg4MTcwNzAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImczemVhZzhkbG1AdGVpaHUuY29tIiwiaWQiOiI2OGQ1NmFiOTE2YTA0MjU0MmQ1ZDkwYjgiLCJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIvYWNjb3VudHMvNjhkNTZhYjkxNmEwNDI1NDJkNWQ5MGI4Il19fQ.MCTdzRZH8FaQyhfO1Pk4L8uMnwhoh50Z-PH36zlG3GweNrrlayIfVDElpusxp7A3ZyNOjzh9wS3jCv4s_6yLtQ",
+      "messages": [],
+      "service": "mailgw",
+      "created_at": 1758817069.7776444,
+      "last_updated": 1758817069.7776446
+    },
+    "hmr212aeds@oakon.com": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NTg4MTcwNzAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImhtcjIxMmFlZHNAb2Frb24uY29tIiwiaWQiOiI2OGQ1NmFjMTdhMGYyYzJkZjkwOTM3NTciLCJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIvYWNjb3VudHMvNjhkNTZhYzE3YTBmMmMyZGY5MDkzNzU3Il19fQ.DA1AfiUaoMFURzjRhGESqIKrIzrHtVmo7tUjyJwHdD8ljW5x9_0W3zH0Bxupy3__-T7aBVdKpRWYHbbTcDSeOw",
+      "messages": [],
+      "service": "mailgw",
+      "created_at": 1758817069.828061,
+      "last_updated": 1758817069.8280616
+    },
+    "udmuzb15u1@questtechsystems.com": {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NTg4MTcwNzAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InVkbXV6YjE1dTFAcXVlc3R0ZWNoc3lzdGVtcy5jb20iLCJpZCI6IjY4ZDU2YWMwYTdjN2NkMWQyZTIzODgyYiIsIm1lcmN1cmUiOnsic3Vic2NyaWJlIjpbIi9hY2NvdW50cy82OGQ1NmFjMGE3YzdjZDFkMmUyMzg4MmIiXX19.j5EUrqkNJ8UJyJYFVLb4p6QRBaQqDm9jm_s8eGJM7G5HPvKZ4vwoQwEgJSkjSva-8N52lQHmBOno8nxueZwgIQ",
+      "messages": [],
+      "service": "mailgw",
+      "created_at": 1758817069.866255,
+      "last_updated": 1758817069.8662555
     }
   },
   "unread_counts": {
-    "pierrette861b35@sf.vertexium.net": 1
+    "ajxuiajbx@yomail.info": 0,
+    "oepeu0fy4p@tiffincrane.com": 0,
+    "catherine86894e@sp.vertexium.net": 0,
+    "sodrtfcr@guerrillamailblock.com": 1,
+    "bkpfrqgl@guerrillamailblock.com": 1,
+    "ogxmqhbc@guerrillamailblock.com": 1,
+    "qmerq8a9xr@pastryofistanbul.com": 0,
+    "8ro5l29xb9@raleigh-construction.com": 0,
+    "t4qrq1r4o3@pastryofistanbul.com": 0,
+    "g3zeag8dlm@teihu.com": 0,
+    "hmr212aeds@oakon.com": 0,
+    "udmuzb15u1@questtechsystems.com": 0
   }
 }

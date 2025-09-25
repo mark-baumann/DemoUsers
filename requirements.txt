@@ -2,3 +2,6 @@ selenium
 requests
 psutil
 stem
+fastapi
+uvicorn
+aiohttp
