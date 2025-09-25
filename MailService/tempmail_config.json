@@ -1,0 +1,25 @@
+{
+  "addresses": {
+    "pierrette861b35@sf.vertexium.net": {
+      "token": "11sa76cih4b3aizg3vzjm7qaj7p9w2ptt34y45",
+      "messages": [
+        {
+          "mail_id": "0",
+          "subject": "test",
+          "mail_from": "\"Mark Baumann\" <kontakt@markb.de>",
+          "mail_date": "2025-09-25 10:30:39",
+          "mail_body": "\r\n\r\n\r\n",
+          "mail_size": 6,
+          "cached": false,
+          "receive_time": 1758789039.951173
+        }
+      ],
+      "service": "tempmaillol",
+      "created_at": 1758788789.083936,
+      "last_updated": 1758789039.95882
+    }
+  },
+  "unread_counts": {
+    "pierrette861b35@sf.vertexium.net": 1
+  }
+}
