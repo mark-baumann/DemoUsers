@@ -1,11 +1,25 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Install dependencies
-pip install -r requirements.txt
+VENV_DIR=".venv"
+
+# Prüfen, ob das Virtual Environment existiert, sonst erstellen
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Virtual Environment $VENV_DIR existiert nicht. Erstelle es..."
+    python3 -m venv "$VENV_DIR"
+else
+    echo "Virtual Environment $VENV_DIR existiert bereits."
+fi
+
+# Aktivieren des Virtual Environments
+source "$VENV_DIR/bin/activate"
+
+# Immer pip über python -m pip verwenden
+"$VENV_DIR/bin/python3" -m pip install --upgrade pip
+"$VENV_DIR/bin/python3" -m pip install -r requirements.txt
 
 # Start API server in background
-uvicorn MailService.api_server:app --host 127.0.0.1 --port 8000 --reload &
+"$VENV_DIR/bin/python3" -m uvicorn MailService.api_server:app --host 127.0.0.1 --port 8000 --reload &
 API_PID=$!
 
 # Wait for API to be ready
@@ -19,9 +33,7 @@ for i in {1..30}; do
 done
 
 # Run MailClient example CLI
-python MailClient.py || true
+"$VENV_DIR/bin/python3" MailClient.py || true
 
 # Keep server running if desired; press Ctrl+C to stop
 wait ${API_PID}
-
-
