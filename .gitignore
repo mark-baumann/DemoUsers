@@ -6,3 +6,5 @@ MailService/tempmail_config.json
 MailService/tempmail_messages.json
 proxy/__pycache__/*
 /mails/*
+network.log
+cursor_account.log
